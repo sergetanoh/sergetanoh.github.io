@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MEMORIAL</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS Files -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: ZenBlog
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Author: BootstrapMade.com
+  * License: https:///bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+  
+      body {
+          background-color: #f8f9fa;
+      }
+      .section-title {
+          background-color: #343a40;
+          color: white;
+          padding: 10px;
+          margin-top: 20px;
+      }
+      .section-content {
+          background-color: white;
+          padding: 20px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          margin-bottom: 20px;
+      }
+
+    .header {
+      background-color: red; /* Header background color */
+    }
+  
+    .navbar li a {
+      color: white; /* Default link color */
+      font-size: 16px; /* Default font size */
+      transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and font size */
+    }
+  
+    .navbar li a:hover {
+      color: yellow; /* Link color on hover */
+      font-size: 18px; /* Increased font size on hover */
+    } 
+    @media (max-width: 768px) {
+      .navbar li a {
+        color: black; /* Text color for mobile view */
+      }
+    
+      .navbar li a:hover {
+        color: rgb(235, 235, 19); /* Link color on hover */
+        font-size: 18px; /* Increased font size on hover */
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top bg-danger">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>MEMORIAL</h1>
+      </a>
+  
+      <nav id="navbar" class="navbar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Acceuil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="category.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <span>Bases de données</span> 
+            </a>
+            <ul class="dropdown-menu " style="color: yellow;">
+              <li><a href="single-post.html" class="dropdown-item" style="color: black;">Victimes</a></li>
+              
+              <li><a href="boureaux.html" class="dropdown-item"  style="color: black;">Bourreaux</a></li>
+              <li><a href="category.html" class="dropdown-item"  style="color: black;">Charniers</a></li>
+              <li><a href="camp_detention.html" class="dropdown-item"  style="color: black;">Camps de detention</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <a href="principale_tuerie.html" class="nav-link">Principales tueries</a>
+          </li>
+          <li class="nav-item">
+            <a href="date_importante.html" class="nav-link"> Autre Dates Importantes</a>
+          </li>
+          <li class="nav-item">
+            <a href="bibliographie.html" class="nav-link"> Bibliographie</a>
+          </li>
+          <li class="nav-item">
+            <a href="association.html" class="nav-link">AVCB</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="category.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <span>Journaux</span> 
+            </a>
+            <ul class="dropdown-menu " style="color: yellow;">
+              <li><a href="single-post.html" class="dropdown-item" style="color: black;">Horoya</a></li>
+              
+              <li><a href="#" class="dropdown-item"  style="color: black;">autre journaux</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+  
+      <div class="position-relative">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+  
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+  
+        <!-- ======= Search Form ======= -->
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div><!-- End Search Form -->
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+   
+
+    
+    
+
+    <div class="container mt-4">
+      <h1 class="text-center"> Nom de la victime: Mody Amadou Bailo Bah</h1>
+      
+      <div class="row">
+          <div class="col-md-4">
+              <img src="assets/img/modi amadou.jpg" alt="Photo de la victime" class="img-fluid" height="200px">
+          </div>
+          <div class="col-md-8">
+              <div class="section-title">Informations personnelles</div>
+              <div class="section-content">
+                  <p>Mody Amadou Bailo Bah est né ver 1918 à Djanfou, dans Gongoré (Pita), de El Hadj Cheick Sanoussy Bah et de Aissata Tchiwto Bah. Originellement son nom de famille est DEM. Il appartient à une lignée Toucouleur venue de Vélingara, Sénégal dans les années 1750.  Ses ancêtres se sont installés successivement à Yembéring et Donghel Sigon dans l’actuelle préfecture de Mali ; puis à Bodiè, Dalaba, et pour finir à Maci Dantaari et Gongorè dans Pita.</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-12">
+              <div class="section-title">La famille</div>
+              <div class="section-content">
+                  <p>Son père, né vers 1889, fut un grand érudit. Il enseigna l’exégèse islamique dans toute la région et devint CHEICK. A la fin des années 1930, il avait été choisi par l’administration coloniale pour être juge coutumier à Pita. Mais il ne resta pas en fonction longtemps : il démissionna moins d’un an après. Pour ses convictions religieuses, il avait estimé que les fonctions de juge étaient incompatibles avec la foi. Mody Amadou Bailo l’envoya à La Mecque pour le pèlerinage en août 1949. Le pèlerinage terminé, il mourut à Djedda en octobre. Il avait 60 ans. <br> <br>
+
+                    Mody Amadou Bailo passa toute son enfance à Gongoré dans le cadre familial. Il eut plusieurs frères et sœurs. Tous étaient illettrés en français sauf Bah Souleymane qui devint, avant l'indépendance, agent technique de santé, spécialisé dans la lutte contre la trypanosomiase. <br> <br>
+                    
+                    Il eut cinq épouses, Assiatou Djanfou Diallo, Kadiatou Saari, Oumou Djiguera, Oumou Mamou Barry et Laouratou Bah. Toutes eurent des enfants pour lui. Mais dès le début des années 1950, il s’était séparé de Kadiatou Saari et Oumou Mamou Barry. <br> <br>
+                    
+                    
+                    Assiatou Djanfou Diallo eut quatre garçons : Abdoulaye en 1941, retraité du système des Nations Unies qui vit entre Rome et Nice, Mamadou Lamine en 1946, journaliste, membre fondateur du Groupe Lynx, Lance et Lynx FM, qui vit entre Conakry et Pita ; Mamadou traducteur-interprète peul/allemand pour les tribunaux de Vienne, en Autriche, où il vit actuellement. <br> <br>
+                    
+                    Quant à Kadiatou Saari, elle eut deux filles : d’abord Moudatou en 1945, secrétaire retraitée. Elle fut l’épouse de feu Bah Mamadou Oury, Directeur de la Station Quinquina devenue Séquina de Sérédou, Macenta. Elle vit entre Conakry et Montréal au Canada. Puis Aissata Tchiwto en 1948, secrétaire à la retraite, qui vit actuellement à Conakry. <br> <br>
+                    
+                    Oumou Djiguera eut six enfants dont deux garçons : Mamata en 1948, secrétaire à la retraite, qui vit à Conakry ; Hadjiatou en 1949, secrétaire retraitée, qui vit à Montréal au Canada ; Karim en 1953, qui a vécu à Nancy avant de rentrer à Pita ; Aissatou en 1957, commerçante qui vit à Conakry ; Alassane en 1960, chauffeur de poids lourds, qui vit à Montréal et enfin Houssaynatou en 1960, qui vit à Conakry. <br> <br>
+                    
+                    Oumou Mamou Barry eut un garçon, Souleymane en 1960. Il est enseignant et vit actuellement à Conakry. <br> <br>
+                    
+                    La dernière épouse, Laouratou Bah, eut trois enfants dont deux filles. Le garçon est décédé très tôt alors que Djeynabou naquit en 1966. Commerçante, elle vit à Conakry. Enfin Raghiata, née en 1971, travaille à la Banque Centrale de Guinée à Conakry. <br> <br>
+                    </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-12">
+              <div class="section-title">Parcours scolaire et politique</div>
+              <div class="section-content">
+                  <p>Sur le plan scolaire Amadou Bailo fit des études coraniques et arabes spécialisées.  <br> <br>
+
+                    Sur le plan politique, il a milité dans le parti de Barry Diawadou, le Bloc Africain de Guinée avant l’indépendance. Il connaissait bien ce dernier, qu’il fréquentait régulièrement. De même pour Barry III, à qui il était très lié et qu’il avait connu en France.
+                    </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-12">
+              <div class="section-title">Activités commerciales et professionnelles</div>
+              <div class="section-content">
+                  <p>Les activités d’Amadou Bailo étaient très variées, mais se concentraient principalement sur le Commerce (alimentation, matériel de construction, produits agricoles…) et le Transport. Dès 1952, il s’était installé à Guéckédou où il opérait en qualité d’acheteur de café, cacao et peaux d’animaux, qu’il revendait aux sociétés européennes à Conakry, notamment à la Compagnie Commerciale Franco Africaine « CCFA », et à Kissidougou, à la société Chavanel SA. <br> <br>
+
+                    Il fut membre fondateur et administrateur de la Compagnie Commerciale et Industrielle Guinéenne à sa création en 1959 ; société qui deviendra EGTPM, Entreprise Guinéenne de Travaux Publics et Maritimes puis Société Mixte de Dragage et de Travaux. En 1975, l’EGTPM sera transformée en SOMIDRAT lorsque l’Etat s’est impliqué dans la gestion en y injectant des fonds. A partir de cette année-là, le capital de l’entreprise est subdivisé en deux types d’actionnaires : l’Etat, actionnaire A et les actionnaires privés issus de l’EGTPM, actionnaires B. L’entreprise s’est éteinte au début des années 2000. A la veille de sa seconde arrestation, Amadou Bailo avait sollicité l’autorisation de l’Etat d’ouvrir 5 nouvelles unités industrielles… <br> <br>
+
+                    Mody Amadou Bailo était fortement impliqué dans le milieu des affaires, parmi les personnes de sa génération, dans son quartier. A ce titre, il voyageait beaucoup dans les pays de la sous-région, en Europe et en Asie. Il avait un carnet d’adresses fourni, parmi lesquels on comptait Barry Modi Oury, l’un des fils de l’Almamy de Mamou, lui-même disparu au Camp Boiro, Barry Ousmane Kolon, originaire de Mamou, Kébé Mamady, homme d’affaires marié à Passy Touré, l’une des sœurs de Sékou Touré, Barry Ibrahima dit Barry III comme indiqué précédemment, Bah Oumar « Chavanel », agent de la Société Chavanel installé à Kissidougou, Diallo Allarény, commerçant originaire de Gongoré (Mamou), Ibrahima Sory Keita, commerçant à Pita et père d’un journaliste décédé du Lynx, Assan Abraham Keita ; Alpha Oumar Diallo, commerçant originaire de Boké et enfin Kaba Moilamine, homme d’affaires et membre de la CCIG et de l’EGTPM. <br> <br>
+Ce dernier, ayant survécu aux traitements inhumains pratiqués dans les geôles du tyran, fut le dernier des amis à avoir vu vivant Mody Amadou Bailo : le jour de son exécution. Avant sa mort, Moilamine a rapporté à Lamine en janvier 1996 que Mody Amadou Bailo avait été tellement torturé que sa tête ne tenait plus sur le cou…. Comme c’est le cas pour les nouveau-nés ! Kaba Moilamine est lui-même sorti de prison complètement paralysé. 
+
+                    </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-12">
+              <div class="section-title">Arrestation et disparition</div>
+              <div class="section-content">
+                  <p>Comme pour la plupart des victimes du régime de Sékou Touré, les raisons de l’arrestation de Mody Amadou Bailo sont inconnues. On l’a taxé d’être un agent de la Cinquième colonne…On imagine que son succès dans les affaires et les jalousies suscitées par ses activités ont probablement représenté un argument de poids dans son arrestation. <br> <br>
+                    Arrêté une première fois en décembre 1970 et libéré le 25 janvier 1971, il est repris le lundi 27 avril 1971. On n’a plus jamais eu de ses nouvelles. Après cette seconde arrestation, on l’a torturé et forcé à donner la combinaison de son coffre-fort. L’équipe dirigée par Siaka Touré a récupéré ses chéquiers et aussi les titres fonciers de ses propriétés. C’est ainsi que de bons terrains lui ont été volés : un domaine d’un hectare à Nongo, en bordure de mer, une parcelle à Boussoura, Matam, et une autre à Kaloum, sur le front de mer, située entre le Palais du peuple et le siège de l’Association des anciens combattants. Ses comptes en banque au Crédit National et à l’agence de la Chemical Bank de Freetown ont été vidés. Siaka Touré s’est lui-même approprié sa voiture Chevrolet automatique de type Chevelle Malibu. Ainsi se perpétuaient les pratiques de la Révolution !
+                     
+                    </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-12">
+              <div class="section-title">Hommage</div>
+              <div class="section-content">
+                  <p>Que leurs âmes reposent en paix...</p>
+                  <h1 class="text-center ml-5">Lamine et Souleymane Bah</h1>
+                  
+                  
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="section-title">Informations supplémentaires</div>
+            <div class="section-content">
+                <!-- Liste des vidéos et enregistrements audio -->
+                <div class="media-list">
+                    <!-- Les éléments seront ajoutés dynamiquement ici via JavaScript -->
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Ftv5mondeofficiel%2Fvideos%2F708970890474832%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      
+  </div>
+  
+ 
+  
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h3 class="footer-heading">About ZenBlog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab, perspiciatis beatae autem deleniti voluptate nulla a dolores, exercitationem eveniet libero laudantium recusandae officiis qui aliquid blanditiis omnis quae. Explicabo?</p>
+            <p><a href="about.html" class="footer-link-more">Learn More</a></p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Blog</a></li>
+              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Categories</a></li>
+              <li><a href="single-post.html"><i class="bi bi-chevron-right"></i> Single Post</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+          
+
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Recent Posts</h3>
+
+            <ul class="footer-links footer-blog-entry list-unstyled">
+              <li>
+                <a href="single-post.html" class="d-flex align-items-center">
+                  <img src="assets/img/post-sq-1.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                    <span>5 Great Startup Tips for Female Founders</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="single-post.html" class="d-flex align-items-center">
+                  <img src="assets/img/post-sq-2.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                    <span>What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="single-post.html" class="d-flex align-items-center">
+                  <img src="assets/img/post-sq-3.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                    <span>Life Insurance And Pregnancy: A Working Mom’s Guide</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="single-post.html" class="d-flex align-items-center">
+                  <img src="assets/img/post-sq-4.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                    <span>How to Avoid Distraction and Stay Focused During Video Calls?</span>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              © Copyright <strong><span>ZenBlog</span></strong>. All Rights Reserved
+            </div>
+
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mediaList = document.querySelector('.media-list');
+    
+    // Exemple de données de vidéos YouTube et Facebook
+    const videoLinks = [
+        'https://www.youtube.com/watch?v=NbrrlU82udI',
+        ,
+        // ... Ajoutez d'autres liens ici
+    ];
+    
+    videoLinks.forEach(function(link) {
+        if (link.includes('youtube.com')) {
+            const videoId = link.split('v=')[1];
+            const iframe = document.createElement('iframe');
+            iframe.width = '560';
+            iframe.height = '315';
+            iframe.src = `https://www.youtube.com/embed/${videoId}`;
+            iframe.allowFullscreen = true;
+
+            const mediaItem = document.createElement('div');
+            mediaItem.classList.add('media-item');
+            mediaItem.appendChild(iframe);
+
+            mediaList.appendChild(mediaItem);
+        } else if (link.includes('facebook.com')) {
+            const videoId = link.split('/videos/')[1];
+            const iframe = document.createElement('iframe');
+            iframe.width = '560';
+            iframe.height = '315';
+            iframe.src = `https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/video.php?=${videoId}`;
+            iframe.allowFullscreen = true;
+
+            const mediaItem = document.createElement('div');
+            mediaItem.classList.add('media-item');
+            mediaItem.appendChild(iframe);
+
+            mediaList.appendChild(mediaItem);
+        }
+    });
+});
+
+
+</script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
