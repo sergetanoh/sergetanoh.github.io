@@ -5,766 +5,469 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MEMORIAL</title>
+  <title>Selecao Bootstrap Template - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo-stratos.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
-  <!-- Template Main CSS Files -->
-  <link href="assets/css/variables.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-MC9mY2BR9k2b17zrXXb71gKS41MrvzUJSMZpxXhBGmDjcOVr4/Z1tSK52I4Rn3j4" crossorigin="anonymous">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: ZenBlog
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Template Name: Selecao
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
   * Author: BootstrapMade.com
-  * License: https:///bootstrapmade.com/license/
+  * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .header {
-      background-color: red; /* Header background color */
-    }
-
-    .navbar li a {
-      color: white; /* Default link color */
-      font-size: 16px; /* Default font size */
-      transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and font size */
-    }
-
-    .navbar li a:hover {
-      color: rgb(235, 235, 19); /* Link color on hover */
-      font-size: 18px; /* Increased font size on hover */
-    }
-    @media (max-width: 768px) {
-      .navbar li a {
-        color: black; /* Text color for mobile view */
-      }
-    
-      .navbar li a:hover {
-        color: rgb(235, 235, 19); /* Link color on hover */
-        font-size: 18px; /* Increased font size on hover */
-      }
-    }
-    
-    .carousel-wrapper {
-      max-width: 800px; /* Définissez la largeur maximale souhaitée */
-        margin: 0 auto; /* Pour centrer horizontalement */
-    }
-    .swiper-slide {
-        width: 100%; /* Largeur de la diapositive */
-        height: 800px; /* Hauteur de la diapositive */
-    }
-    .img-bg {
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-size: contain; /* Adapter l'image tout en conservant les proportions */
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .image-container {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0px; /* Pour compenser la marge négative par défaut de Bootstrap */
-      padding: 0px; /* Pour compenser la marge négative par défaut de Bootstrap */
-    }
-
-    .image-container img {
-      flex: 0 0 calc(7.69% - 10px); /* Pour diviser en 13 colonnes avec 10px de marge entre les images */
-      margin: 0px; /* Espacement entre les images */
-      object-fit: cover; /* Ajuster l'image pour remplir l'espace sans déformation */
-      width: 100px; /* Assurer que l'image remplit complètement son conteneur */
-      height: 200px; /* Assurer que l'image remplit complètement son conteneur */
-    }
-
-
-    .image-button {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .arrow-link {
-      color: white;
-      font-size: 24px;
-    }
-
-    .arrow-link:hover {
-      text-decoration: none;
-    }
-    .button-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-    
-    .button-overlay a {
-      margin: 0 10px;
-      display: inline-block; /* Ajoutez cette propriété */
-      transition: transform 0.2s ease-in-out; /* Ajoutez une transition */
-    }
-    
-    .button-overlay a:hover {
-      transform: scale(1.1); /* Légèrement agrandir le lien au survol */
-    }
-    #player-container {
-      display: none; /* Masquer le conteneur du lecteur vidéo par défaut */
-    }
-
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-.hero-slider {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-.hero-slider {
-  display: flex;
-  padding: 0 35px;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(to left top, #031A9A, #8B53FF);
-}
-.wrapper {
-  max-width: 1100px;
-  width: 100%;
-  position: relative;
-}
-.wrapper i {
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
-  text-align: center;
-  line-height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.wrapper i:active{
-  transform: translateY(-50%) scale(0.85);
-}
-.wrapper i:first-child{
-  left: -22px;
-}
-.wrapper i:last-child{
-  right: -22px;
-}
-.wrapper .carousel{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-.carousel.no-transition {
-  scroll-behavior: auto;
-}
-.carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-.carousel.dragging .card {
-  cursor: grab;
-  user-select: none;
-}
-.carousel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel .card {
-  scroll-snap-align: start;
-  height: 342px;
-  list-style: none;
-  background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-}
-.carousel .card .img {
-  background: #8B53FF;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
-}
-.card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-}
-.carousel .card h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
-}
-.carousel .card span {
-  color: #6A6D78;
-  font-size: 1.31rem;
-}
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-}
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
-}
-/* Style for the video container */
-.video-container {
-  max-width: 600px; /* Adjust the maximum width as needed */
-  margin: 0 auto;
-}
-
-/* Style for the video player */
-#player {
-  width: 100%; /* Video width set to 100% of the container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Additional styles for buttons or other elements */
-.btn {
-  margin-right: 10px;
-}
-    
-  </style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top bg-danger">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-  
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>MEMORIAL</h1>
-      </a>
-  
-      <nav id="navbar" class="navbar">
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Acceuil</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="category.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-              <span>Bases de données</span> 
-            </a>
-            <ul class="dropdown-menu " style="color: yellow;">
-              <li><a href="single-post.html" class="dropdown-item" style="color: black;">Victimes</a></li>
-              
-              <li><a href="boureaux.html" class="dropdown-item"  style="color: black;">Bourreaux</a></li>
-              <li><a href="category.html" class="dropdown-item"  style="color: black;">Charniers</a></li>
-              <li><a href="camp_detention.html" class="dropdown-item"  style="color: black;">Camps de detention</a></li>
-            </ul>
-          </li>
-          
-          <li class="nav-item">
-            <a href="principale_tuerie.html" class="nav-link">Principales tueries</a>
-          </li>
-          <li class="nav-item">
-            <a href="date_importante.html" class="nav-link"> Autre Dates Importantes</a>
-          </li>
-          <li class="nav-item">
-            <a href="bibliographie.html" class="nav-link"> Bibliographie</a>
-          </li>
-          <li class="nav-item">
-            <a href="association.html" class="nav-link">AVCB</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="category.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-              <span>Journaux</span> 
-            </a>
-            <ul class="dropdown-menu " style="color: yellow;">
-              <li><a href="horoya.html" class="dropdown-item" style="color: black;">Horoya</a></li>
-              
-              <li><a href="#" class="dropdown-item"  style="color: black;">autre journaux</a></li>
-              
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </nav><!-- .navbar -->
-  
-      <div class="position-relative">
-        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
-        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
-        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
-  
-        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-  
-        <!-- ======= Search Form ======= -->
-        <div class="search-form-wrap js-search-form-wrap">
-          <form action="search-result.html" class="search-form">
-            <span class="icon bi-search"></span>
-            <input type="text" placeholder="Search" class="form-control">
-            <button class="btn js-search-close"><span class="bi-x"></span></button>
-          </form>
-        </div><!-- End Search Form -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><img src="assets/img/logo-stratos.png" alt=""></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#features">Formation</a></li>
+              <li><a href="#features">Developpement web</a></li>
+                  <li><a href="#features">Business Inteligent </a></li>
+                  <li><a href="#features">Audit SI</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#pricing">References</a></li>
+          <li><a class="nav-link scrollto" href="#faq">Carrieres</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
   </header><!-- End Header -->
-  
-<main id="main">
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
-  <section id="background-section" class="background-section">
-    
-      <div class="image-container">
-      
-      
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/3.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/4.jpeg" alt="Image 2">
-        <img src="assets/img/5.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/6.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/7.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/4.jpeg" alt="Image 2">
-        <img src="assets/img/3.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/4.jpeg" alt="Image 1">
-        <img src="assets/img/5.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/6.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/5.jpeg" alt="Image 2">
-        <img src="assets/img/2.jpeg" alt="Image 1">
-        <img src="assets/img/3.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/4.jpeg" alt="Image 1">
-        <img src="assets/img/5.jpeg" alt="Image 2">
-        <img src="assets/img/7.jpeg" alt="Image 2">
-        <img src="assets/img/6.jpeg" alt="Image 1">
-        <img src="assets/img/5.jpeg" alt="Image 2">
-        <img src="assets/img/7.jpeg" alt="Image 1">
-        <img src="assets/img/6.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        <img src="assets/img/2.jpeg" alt="Image 2">
-        <img src="assets/img/1.jpeg" alt="Image 1">
-        
-        
-  
-        
-        <!-- Ajoutez plus d'images ici -->
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown"><span>STRATOS CONSEILS</span></h2>
+          <p class="animate__animated fanimate__adeInUp">Société de conseils et services qui propose des services à fortes valeurs ajoutées qui contribuent à l’atteinte de la performance commerciale et opérationnel de ses clients..</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Decouvrur la suite</a>
+        </div>
       </div>
-  </section>
-  
-  <div class="button-overlay">
-    <div class="button-overlay">
-      <button class="btn btn-primary" data-video="https://mdbcdn.b-cdn.net/img/video/forest.mp4">Intro en français</button>
-    <a href="#" class="btn btn-primary" data-video="video-en">Intro en anglais</a>
-    <a href="#" class="btn btn-primary" data-video="video-ar">Intro en arabe</a>
-    <a href="#" class="btn btn-primary" data-video="video-ma">Intro en malinké</a>
-    <a href="#" class="btn btn-primary" data-video="video-so">Intro en soussou</a>
-      <!-- Ajoutez d'autres boutons -->
+
+      <!-- Slide 2 -->
+      
+     
+
     </div>
-    
-    <div class="video-container" id="player-container">
-      <video id="player" playsinline controls>
-        <source src="" type="video/mp4">
-      </video>
-    </div>
-    
-  </div>
 
-  
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
 
-    <!-- ======= Hero Slider Section ======= -->
-    <h2 class="text-center"> l’héritage que laisse Sékou Touré à la postérité</h2>
-<section id="hero-slider" >
-  <div class="wrapper">
-    <i id="left" class="fa-solid fa-angle-left"></i>
-    <ul class="carousel">
-      <li class="card">
-        <div class="img"><img src="assets/img/1.jpeg" alt="img" draggable="false"></div>
-        <h2>Blanche Pearson</h2>
-        <span>Sales Manager</span>
-      </li>
-      <li class="card">
-        <div class="img"><img src="assets/img/2.jpeg" alt="img" draggable="false"></div>
-        <h2>Joenas Brauers</h2>
-        <span>Web Developer</span>
-      </li>
-      <li class="card">
-        <div class="img"><img src="assets/img/3.jpeg" alt="img" draggable="false"></div>
-        <h2>Lariach French</h2>
-        <span>Online Teacher</span>
-      </li>
-      <li class="card">
-        <div class="img"><img src="assets/img/4.jpeg" alt="img" draggable="false"></div>
-        <h2>James Khosravi</h2>
-        <span>Freelancer</span>
-      </li>
-      <li class="card">
-        <div class="img"><img src="assets/img/5.jpeg" alt="img" draggable="false"></div>
-        <h2>Kristina Zasiadko</h2>
-        <span>Bank Manager</span>
-      </li>
-      <li class="card">
-        <div class="img"><img src="assets/img/6.jpeg" alt="img" draggable="false"></div>
-        <h2>Donald Horton</h2>
-        <span>App Designer</span>
-      </li>
-      <li class="card">
-        <div class="img"><img src="assets/img/7.jpeg" alt="img" draggable="false"></div>
-        <h2>Donald Horton</h2>
-        <span>App Designer</span>
-      </li>
-    </ul>
-    <i id="right" class="fa-solid fa-angle-right"></i>
-  </div>
-</section>
+  </section><!-- End Hero -->
 
-   
-    <!-- ======= Culture Category Section ======= -->
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about" style="background-color: #c5dcdb;">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Qui </h2>
+          <p>sommes-nous?</p>
+        </div>
+
+        <div class="row content" data-aos="fade-up">
+          <div class="col-lg-6">
+            <p>
+             <span>STRATOS CONSEILS </span> <br> est une entreprise de Conseils proposant des services autour des Pôles d’activités suivants :
+              TRANSFORMATION DIGITALE | FORMATION (E-EDUCATION) | TECHNOLOGIE FINANCIERE (FINTEC)
+              Nous vous accompagnons dans l’atteinte de la performance durable. Notre équipe est appuyée de consultants internationaux expérimentés pour vous donner l’assurance : d’avoir des interlocuteurs professionnels, disponibles et efficaces de vous reposer sur une infrastructure solide, fiable et qui a fait ses preuves de pouvoir vous concentrer sereinement sur votre cœur de métier
+            </p>
+            
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            
+            <img src="assets/img/qui-sommes.jpg" alt="" style="height:350px ;">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+         <h2 class="mr-2">Nos Services</h2>
+
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3" data-aos="zoom-in">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">Developpement Web</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+              <i class="ri-body-scan-line"></i>
+              <h4 class="d-none d-lg-block">Formation</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+              <i class="ri-sun-line"></i>
+              <h4 class="d-none d-lg-block">Business Inteligent</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Audit SI</h4>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Conception de Sites Web - Création de sites web magnifiques, réactifs et conviviaux qui captivent vos visiteurs dès la première vue.</li>
+                  <li><i class="ri-check-double-line"></i> Développement d'Applications Web - Construction d'applications web personnalisées pour répondre à vos besoins spécifiques, du simple outil en ligne aux systèmes d'entreprise complexes.</li>
+                  <li><i class="ri-check-double-line"></i> E-commerce - Mise en place de boutiques en ligne puissantes et sécurisées pour vous aider à développer votre entreprise en ligne.</li>
+                </ul>
+                <p>
+                  Optimisation de la Performance - Amélioration de la vitesse, de la sécurité et de la convivialité de votre site web pour offrir une expérience utilisateur exceptionnelle.
+
+Maintenance et Assistance - Veillez à ce que votre site web reste à jour, sécurisé et fonctionne sans problème grâce à nos services de maintenance et de support dédiés.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/dev web.jpeg" alt="" class="img-fluid" width="500px">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                
+                <p>
+                   nous croyons en l'importance de l'apprentissage continu dans un monde en constante évolution. Notre engagement envers l'éducation et le développement des compétences est au cœur de tout ce que nous faisons. Nous sommes fiers d'offrir une gamme diversifiée de programmes de formation conçus pour vous préparer à réussir dans l'ère numérique.
+                </p>
+               
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Formation en Développement Web - Maîtrisez les langages de programmation, les frameworks et les technologies essentielles pour créer des sites et des applications web de classe mondiale.</li>
+                  
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/formation.jpeg" alt="" class="img-fluid" width="400px">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                
+                <p>
+                  À l'ère numérique, les données sont une ressource précieuse, et la capacité à les comprendre et à les exploiter est essentielle pour le succès des entreprises. Nous vous aidons à tirer parti de vos données pour prendre des décisions plus éclairées et atteindre vos objectifs commerciaux.
+                </p>
+                
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/bi.jpeg" alt="" class="img-fluid" width="400px">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+               
+                <p>
+                  L'audit des systèmes d'information (SI) est essentiel pour garantir la fiabilité, la sécurité et la performance de votre infrastructure technologique. Chez TechSolutions, nous vous aidons à évaluer, à optimiser et à sécuriser vos systèmes d'information pour une entreprise plus résiliente.
+                </p>
+                
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/audit.jpeg" alt="" class="img-fluid" width="400px">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
 
 
-    <!-- ======= Business Category Section ======= -->
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          
+          <p>Partenaires</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <img src="assets/img/SAKHO.png"  alt="" height="300px">
+                <h3>Cabinet d’avocat</h3>
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <img src="assets/img/egye.png"  alt="" height="300px">
+                <h3>Yes Oil</h3>
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+            
+                <img src="assets/img/five.png"  alt="" height="300px">
+                <h3>Federation d’escrime</h3>
+               
+              </div>
+            </div><!-- End testimonial item -->
+
+           
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
 
 
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
 
-</main><!-- End #main -->
+        <div class="section-title" data-aos="zoom-out">
+          
+          <p>OFFRE DE STAGE DE QUALIFICATION : DEVELOPPEUR WEB</p>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">DEROULER DU STAGE <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Après une période Intense de formation d’une durée de 1 mois sur les technologies que nous utilisons (HTML-CSS-PHP) vous participerez durant les deux mois suivants pleinement aux projets de développement web de nos clients
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">MISSION <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Concevoir partiellement les applications de gestion et sites internet de nos clients.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">ACTIVITE <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list"> <br>
+              <p>
+                <ul>
+                <li> Analyser et modéliser les besoins des clients et prospects dans le cadre de leurs projets web </li> <br>
+               <li> Concevoir, développer et actualiser les sites internet de nos clients</li> <br>
+                Rédiger les spécifications fonctionnelles et techniques <br>
+                <li> Participer à la conception d’applications web de gestion(Codage) en utilisant le Framework (Symfony)</li> <br>
+                <li>Conseiller la direction dans le choix des solutions informatiques</li> <br>
+                <li>Apporter un support technique aux clients et aux consultants fonctionnels </li> <br>
+              </ul>
+              </p> <br>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Profil Recherché <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                <ul>
+                  <li>Avoir un niveau BAC + 2 ou plus en informatique ou équivalent (Expérience : DEBUTANT)</li>
+                  <li>Avoir un ordinateur personnel</li>
+                  <li>Connaissance des langages suivants : PHP, MYSQL, SQL, HTML5, CSS</li>
+                  <li>Connaissance d’un système de gestion de contenu CMS, (Joomla, WordPress)</li>
+                  <li>Connaissance d’un Framework (Symfony idéalement) serait un plus</li>
+                  <li>Capacité à Travailler de façon autonome à distance sous la supervision du chef de projet Informatique</li>
+                  <li>Rigoureux, organisé, honnête et ayant le sens de la responsabilité.</li>
+              </ul>
+              
+              </p>
+            </div>
+          </li>
+
+          
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>ABIDJAN, COCODY
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>recrutement@stratos-co.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+225 0748434460</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nom" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">chargement</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Message envoé avec succès</div>
+              </div>
+              <div class="text-center"><button type="submit">Envoi</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
- <footer id="footer" class="footer">
-
-    <div class="footer-content">
-      <div class="container">
-
-        <div class="row g-5">
-          <div class="col-lg-4">
-            <h3 class="footer-heading">Memorial</h3>
-            
-            <p><a href="about.html" class="footer-link-more">Learn More</a></p>
-          </div>
-        
-        
-
-          <div class="col-lg-4">
-            <h3 class="footer-heading">Recent Posts</h3>
-
-            <ul class="footer-links footer-blog-entry list-unstyled">
-              <li>
-                <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-1.jpg" alt="" class="img-fluid me-3">
-                  <div>
-                   
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="single-post.html" class="d-flex align-items-center">
-                 
-                  <div>
-                   
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-3.jpg" alt="" class="img-fluid me-3">
-                  <div>
-                    
-                    
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-4.jpg" alt="" class="img-fluid me-3">
-                  <div>
-                    
-                    
-                  </div>
-                </a>
-              </li>
-
-            </ul>
-
-          </div>
-        </div>
+  <footer id="footer">
+    <div class="container">
+      <h3>Stratos-Conseils </h3>
+      <p>L'avenir Autrement.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
-    </div>
-
-    <div class="footer-legal">
-      <div class="container">
-
-        <div class="row justify-content-between">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <div class="copyright">
-              © Copyright <strong><span>Memorial</span></strong>. All Rights Reserved
-            </div>
-
-            <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you purchased the pro version. -->
-              <!-- Licensing information: https://bootstrapmade.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-
-          </div>
-
-          <div class="col-md-6">
-            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-
-          </div>
-
-        </div>
-
+      <div class="copyright">
+        &copy; Copyright <strong><span>Stratos-Conseils</span></strong>. All Rights Reserved
       </div>
+      
     </div>
+  </footer><!-- End Footer -->
 
-  </footer>
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const buttons = document.querySelectorAll(".button-overlay button");
-      const videoPlayer = document.getElementById("player");
-      const videoSource = videoPlayer.querySelector("source");
-      const playerContainer = document.getElementById("player-container");
-      const videoContainer = document.querySelector('.video-container');
 
-      // Function to reduce the video size
-      function reduceVideo() {
-          videoContainer.classList.add('video-reduced');
-      }
-
-      // Function to hide the reduced video
-      function hideVideo() {
-          videoContainer.classList.add('video-hidden');
-      }
-
-      // Function to handle scroll event
-      function handleScroll() {
-          const scrollPosition = window.scrollY || window.pageYOffset;
-
-          if (scrollPosition > 100) {
-              reduceVideo();
-          } else {
-              videoContainer.classList.remove('video-reduced');
-          }
-      }
-
-      // Add scroll event listener
-      window.addEventListener('scroll', handleScroll);
-
-      // Handle video pause event
-      videoPlayer.addEventListener('pause', function() {
-          videoPlayer.currentTime = 0; // Reset video to beginning
-          videoContainer.classList.remove('video-reduced');
-      });
-
-      buttons.forEach((button) => {
-          button.addEventListener("click", function () {
-              const videoURL = button.getAttribute("data-video");
-              videoSource.setAttribute("src", videoURL);
-              videoPlayer.load(); // Recharge la vidéo avec la nouvelle source
-              videoPlayer.play(); // Commence automatiquement la lecture
-
-              playerContainer.style.display = "block"; // Affiche le conteneur du lecteur vidéo
-          });
-      });
-  }); 
-    
-  </script>
-  <script>
-    // Initialisation de Plyr pour le lecteur vidéo
-    const player = new Plyr('#player', {
-      autoplay: true,     // Lecture automatique au chargement
-      muted: true,        // Vidéo sans son au début
-    });
-
-    // Activer le son lorsque la vidéo est cliquée
-    player.on('play', () => {
-      player.muted = false;
-    });
-  </script>
   <!-- Template Main JS File -->
-<script>
-    const wrapper = document.querySelector(".wrapper");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper i");
-const carouselChildrens = [...carousel.children];
-
-let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
-
-// Get the number of cards that can fit in the carousel at once
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-
-// Insert copies of the last few cards to beginning of carousel for infinite scrolling
-carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-});
-
-// Insert copies of the first few cards to end of carousel for infinite scrolling
-carouselChildrens.slice(0, cardPerView).forEach(card => {
-    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-});
-
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
-carousel.classList.add("no-transition");
-carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove("no-transition");
-
-// Add event listeners for the arrow buttons to scroll the carousel left and right
-arrowBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
-    });
-});
-
-const dragStart = (e) => {
-    isDragging = true;
-    carousel.classList.add("dragging");
-    // Records the initial cursor and scroll position of the carousel
-    startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft;
-}
-
-const dragging = (e) => {
-    if(!isDragging) return; // if isDragging is false return from here
-    // Updates the scroll position of the carousel based on the cursor movement
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-}
-
-const dragStop = () => {
-    isDragging = false;
-    carousel.classList.remove("dragging");
-}
-
-const infiniteScroll = () => {
-    // If the carousel is at the beginning, scroll to the end
-    if(carousel.scrollLeft === 0) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-        carousel.classList.remove("no-transition");
-    }
-    // If the carousel is at the end, scroll to the beginning
-    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.offsetWidth;
-        carousel.classList.remove("no-transition");
-    }
-
-    // Clear existing timeout & start autoplay if mouse is not hovering over carousel
-    clearTimeout(timeoutId);
-    if(!wrapper.matches(":hover")) autoPlay();
-}
-
-const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-    // Autoplay the carousel after every 2500 ms
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-}
-autoPlay();
-
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
-</script>
   <script src="assets/js/main.js"></script>
 
 </body>
