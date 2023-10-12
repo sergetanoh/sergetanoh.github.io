@@ -1,0 +1,231 @@
+:root{
+	--clr-princip: #499e90 ;
+}
+
+/* -------------------------------------- LOADER-------------------------------------- */
+@property --a{
+	syntax: '<angle>';
+	inherits: false;
+	initial-value: 0deg;
+}
+.load{
+	position: relative;
+	width: 70px;
+	height: 70px;
+	color: #ffff;
+	top:40px;
+	background: repeating-conic-gradient(from var(--a), #ffff 0%, #ffff 5%, transparent 5%, transparent 40%, #ffff 100%);
+	border-radius: 50%;
+	animation: animate 2s linear infinite;
+}
+@keyframes animate{
+	0%
+	{
+		--a:0deg;
+	}
+	100%{
+		--a: 360deg;
+	}
+}
+.load::before{
+	content: '';
+	position: absolute;
+	inset: 2px;
+	background:var(--clr-princip);
+	border-radius: 50%;
+}
+.load span{
+	position: absolute;
+	inset: 0;
+	animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.load span::before{
+	content: '';
+	position: absolute;
+	left: 50px;
+	width: 10px;
+	height: 10px;
+	background: #fff ;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #ffff,
+	0 0 20px #ffff,
+	0 0 40px #ffff;
+
+}
+
+
+/* ----------------------------------TABLES--------------------------------------- */
+.container_process{
+	margin-right: 100px;
+	padding: 0;
+
+}
+.tables_process{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	
+}
+.tables_process .table{
+	margin: 2rem;
+
+}
+.tables_process .table_header, .table_containt{
+	padding:1rem;
+	margin: 0 1rem;
+	width: 350px;
+	margin: .5rem;
+	border-radius: 20px;
+	background: linear-gradient(#ffffff3c, #ffffff03);
+	color: black;
+
+
+}
+.table_header h3{
+	font-size: 20px;
+}
+.tables_process .table_header{
+	background-color: #ffffff35;
+	
+	box-shadow:3px 3px 10px rgba(96, 88, 88, 0.722);
+}
+
+
+	@media (max-width:1183px) {
+		.tables_process{
+		grid-template-columns:1fr 1fr;
+	}
+}
+@media (max-width:783px){
+	.tables_process{
+		grid-template-columns: 1fr;
+	}
+}
+
+/* --------------------------------------------PARTENAIRE----------------------------------- */
+.partnaire_slider{
+	height: 250px;
+	margin: auto;
+	position: relative;
+	width: 90%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+
+}
+.slide-track{
+	display: flex;
+	width: calc(250px * 18);
+	animation: scroll 40s linear infinite;
+}
+.slide-track:hover{
+	 animation-play-state: paused;
+}
+
+@keyframes scroll{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px *9));
+	}
+}
+.part_slide{
+	height: 200px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	perspective: 100px;
+}
+.part_slide img{
+	width: 100%;
+	transition: transform 1s;
+}
+.part_slide img:hover{
+	transform: translateZ(20px);
+}
+/* ====================================================================CONTACT============================================== */
+
+.contact{
+	display: flex;
+	
+	justify-content: space-between;
+}
+.contact_head{
+	width: 30rem;
+}
+.contact_form{
+	background-color: rgba(0, 0, 0, 0.521);
+	padding: 1rem;
+	border-radius: 20px;
+}
+.contact_form .user-box {
+	position: relative;
+  }
+  
+  .contact_form .user-box input, .contact_form .user-box textarea {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #ffffff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	outline: none;
+	background: transparent;
+  }
+  .contact_form .user-box label {
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #ffffff;
+	pointer-events: none;
+	transition: .5s;
+  }
+  
+  .contact_form .user-box input:focus ~ label,
+  .contact_form .user-box input:valid ~ label,
+  .contact_form .user-box textarea:focus ~ label,
+  .contact_form .user-box textarea:valid ~ label
+   {
+	top: -20px;
+	left: 0;
+	color: orange;
+	font-size: 12px;
+  }
+  
+  .contact_form form a {
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 40px;
+	letter-spacing: 4px
+  }
+  
+  .contact_form a:hover {
+	background: #f49c03;
+	color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #f49c03,
+				0 0 25px #f49c03,
+				0 0 50px #f49c03,
+				0 0 100px #f49c03;
+  }
+  
