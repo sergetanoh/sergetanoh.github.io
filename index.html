@@ -5,95 +5,70 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>eBusiness Bootstrap Template - Index</title>
+  <title>Projet ++</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="pp.webp" rel="icon">
-  <link href="pp.webp" rel="apple-touch-icon">
+  <link href="assets/img/pp.webp" rel="icon">
+  <link href="assets/img/pp.webp" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: eBusiness
+  * Template Name: Presento
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
   <style>
-    .custom-img {
-      object-fit: cover; /* ou "contain" selon vos besoins */
-      width: 500px;
-      height: 500px;
-  }
-  
-    .rows {
-      background-color: #f0f0f0; /* Couleur de fond */
-      padding: 20px; /* Espace intérieur */
+    .entry-meta li {
+      margin-right: 15px; /* Espacement entre les éléments de la liste */
     }
   
-    .section-headline {
-      margin-bottom: 20px; /* Marge en bas */
-    }
-  
-    h4 {
-      color: #333; /* Couleur du texte */
-      font-size: 24px; /* Taille de la police */
-    }
-  
-    span {
-      font-style: italic; /* Style de police italique pour le span */
-      color: #007bff; /* Couleur du texte pour le span */
+    .read-more a {
+      color: #fff; /* Couleur du texte */
+      background-color: #2894a7; /* Couleur de fond verte (success) */
+      border-color: #287da7; /* Couleur de la bordure */
     }
   </style>
- 
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html"> <img src="assets/img/pp.webp" alt=""> </a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
-      <div class="logo">
-        <a href="index.html">
-          <img src="pp.webp" alt="Texte alternatif de l'image">
-      </a>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Acceuil</a></li>
-          <li><a class="nav-link scrollto" href="blog.html">Blogs</a></li>
-          <li><a class="nav-link scrollto" href="labs.html">Labs</a></li>
-          <li><a class="nav-link scrollto" href="webinaire.html">Webinaires</a></li>
-          <li><a class="nav-link scrollto" href="#team">Concours</a></li>
-          <li><a href="#about">autre</a></li>
-          <li class="dropdown"><a href="#"><span>Plus</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">A propos </a></li>
-              <li><a href="#">Groupe</a></li>
-              
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">contact</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Acceuil</a></li>
+          <li><a class="nav-link scrollto" href="#about">A propos</a></li>
+          <li><a class="nav-link scrollto" href="#services">Webinaires</a></li>
+          <li><a class="nav-link scrollto " href="portfolio-details.html">Concours</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#team">Groupes</a></li>
+          <li><a href="#">Blog</a></li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -101,502 +76,693 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
 
-        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/pageacceuil.jpeg)">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">Bienvenue sur <Strong>Projet++</Strong> </h2>
-                <p class="animate__animated animate__fadeInUp">Mettons en lumière les talents en actuariat, Data-science et en finance quantitative.</p>
-                <a href="#cards" class="btn-get-started scrollto animate__animated animate__fadeInUp">Continuer</a>
-              </div>
-            </div>
-          </div>
-
-    
-
-        </div>
-
-        
-
-      </div>
-    </div>
-  </section><!-- End Hero Section --> <br> <br>
-
-  <div id="services" class="services-area area-padding">
-    <div class="container">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline services-head text-center">
-            <h2>Principales activités</h2>
-          </div>
+        <div class="col-xl-6">
+          <h1>Bienvenue sur Projet++</h1>
+          <h2>Mettons en lumière les talents en actuariat, Data-science et en finance quantitative.</h2>
+          <a href="#about" class="btn-get-started scrollto">Continuez </a>
         </div>
-      </div>
-      <div class="row text-center">
-        <!-- Start Left services -->
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="about-move">
-            <div class="services-details">
-              <div class="single-services">
-                <a class="services-icon" href="#">
-                  <i class="bi bi-briefcase"></i>
-                </a>
-                <h4>Publication</h4>
-                
-              </div>
-            </div>
-            <!-- end about-details -->
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="about-move">
-            <div class="services-details">
-              <div class="single-services">
-                <a class="services-icon" href="#">
-                  <i class="bi bi-card-checklist"></i>
-                </a>
-                <h4>Évènements
-
-                  Actualités</h4>
-                
-              </div>
-            </div>
-            <!-- end about-details -->
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <!-- end col-md-4 -->
-          <div class=" about-move">
-            <div class="services-details">
-              <div class="single-services">
-                <a class="services-icon" href="#">
-                  <i class="bi bi-bar-chart"></i>
-                </a>
-                <h4>Ton Projet ici</h4>
-                
-              </div>
-            </div>
-            <!-- end about-details -->
-          </div>
-        </div>
-        
-        <!-- End Left services -->
-        
-        <!-- End Left services -->
-        
       </div>
     </div>
-  </div><!-- End Services Section -->
+
+  </section><!-- End Hero -->
+
   <main id="main">
 
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/isfa.png" class="img-fluid" alt=""></div>
+           
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
     <!-- ======= About Section ======= -->
-    <div id="about" class="about-area area-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Post à l'affiche </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- single-well start-->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="well-left">
-              <div class="single-well">
-                <a href="#">
-                  <img src="pa.webp" alt="" width="500px">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- single-well end-->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="well-middle">
-              <div class="single-well">
-                <a href="#">
-                  <h4 class="sec-head"> Auteurs : Aimé Ndjeng
-                  </h4>
-                </a>
-                <p>
-                  ACTUARIAT-VIE                </p>
-                <ul>
-                  <li>
-                    <i class="bi bi-check"></i>posté :20 septembre 2023
-                  </li>
-                  
-                </ul>
-                <p>
-                  Les mathématiques des assurances des personnes, souvent appelées actuarial science, sont une branche des mathématiques appliquées qui se concentre sur l'analyse des risques liés à la vie et à la santé des individus. Les actuaires, qui sont des professionnels spécialisés dans ce domaine, utilisent des modèles mathématiques pour évaluer et gérer ces risques. 
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End col-->
-        </div>
-      </div>
-    </div><!-- End About Section -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
 
-    <div id="portfolio" class="portfolio-area area-padding fix">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Evénements/Actualités</h2>
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch">
+            <div class="content">
+              <h3>À propos</h3>
+              <p>
+                Projet ++, est un lieu de partage et de valorisation des projets innovants en actuariat, data science et en finance quantitative. Il offre une opportunité pour les étudiants et les professionnels de faire connaître leurs travaux et de les partager avec une communauté qui est intéressée par ces domaines.
+
+                Nous avons pour objectif de stimuler la créativité et l’innovation dans ces domaines en encourageant les étudiants et les professionnels à partager leurs idées et à collaborer avec d’autres personnes passionnées. Nous sommes convaincus que la collaboration et le partage sont des clés pour favoriser la croissance et l’évolution de ces domaines.
+                
+                Nous sommes ravis de vous accueillir sur ” Projet ++” et nous espérons que vous trouverez ici des travaux inspirants et motivants qui vous donneront des idées et vous permettront de progresser dans vos propres travaux.
+                
+                Projet++ compte plus de 5 Membres et 4 mentors exerçant dans les domaines d'actuariat et/ou data science.              </p>
+              <p class="about-btn"><span>Projet++ a été lancé officiellement le 20 Mai 2023.</span> <i class="bx bx-chevron-right"></i></p>
             </div>
           </div>
-        </div>
-        <div class="row wesome-project-1 fix">
-          <!-- Start Portfolio -page -->
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              
-            </ul>
-          </div>
-        </div>
-
-        <div class="row awesome-project-content portfolio-container">
-
-          <!-- portfolio-item start -->
-          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-app portfolio-item">
-            <div class="single-awesome-project">
-              <div class="awesome-img">
-                <a href="#"><img src="event1.webp" alt="" class="custom-img" /></a>
-                <div class="add-actions text-center">
-                  <div class="project-dec">
-                    <a class="portfolio-lightbox" data-gallery="myGallery" href="event1.webp">
-                      <h4>Simulation d'une tarification de produit en assurances vie via Rshiny</h4>
-                      
-                    </a>
-                  </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Originalité</h4>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- portfolio-item end -->
-
-          <!-- portfolio-item start -->
-          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-web">
-            <div class="single-awesome-project">
-              <div class="awesome-img">
-                <a href="#"><img src="event2.webp" alt="" class="custom-img"/></a>
-                <div class="add-actions text-center">
-                  <div class="project-dec">
-                    <a class="portfolio-lightbox" data-gallery="myGallery" href="event2.webp">
-                      <h4>Nouveau logo</h4>
-                      
-                    </a>
-                  </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Pertincence</h4>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- portfolio-item end -->
-
-          <!-- portfolio-item start -->
-          <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-card">
-            <div class="single-awesome-project">
-              <div class="awesome-img">
-                <a href="#"><img src="event3.webp" alt="" class="custom-img" /></a>
-                <div class="add-actions text-center">
-                  <div class="project-dec">
-                    <a class="portfolio-lightbox" data-gallery="myGallery" href="event3.webp">
-                      <h4>Competiion </h4>
-                      <span>Rshiny</span>
-                    </a>
-                  </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-images"></i>
+                  <h4>Inovation</h4>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- portfolio-item end -->
-
-          <!-- portfolio-item start -->
-          
-
-        </div>
-      </div>
-    </div><!-- End Portfolio Section -->
-
-        <div id="team" class="our-team-area area-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>
-                Derniers postes</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-                  <img src="poste1.webp" alt="">
-                </a>
-                <div class="team-social-icon text-center">
-                  <h4></h4>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Difference</h4>
                 </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>ACTUARIAT-VIE</h4>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Excellence</h4>
+                </div>
                 
               </div>
-            </div>
+            </div><!-- End .content-->
           </div>
-          <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-                  <img src="poste2.webp" alt="">
-                </a>
-                <div class="team-social-icon text-center">
-                  
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+        <h5 class="text-center"> Poste à l'affiche</h5>
+        <div class="row">
+          <div class="col-lg-8 entries">
+            <article class="entry">
+              <div class="entry-img">
+                <img src="assets/img/blog/poste1.webp" alt="" class="img-fluid">
+              </div>
+              <div class="entry-meta">
+                <ul class="d-flex">
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Aimé Ndjeng</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">Sep 20</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">12 Commentaires</a></li>
+                </ul>
+              </div>
+              <div class="entry-content">
+                <p>
+                  Les mathématiques des assurances vie font référence à l'utilisation de concepts mathématiques pour modéliser et évaluer les produits d'assurance vie. Ces produits sont conçus pour fournir des prestations financières aux bénéficiaires après le décès de l'assuré ou, dans certains cas, à l'assuré lui-même en cas de survie jusqu'à la fin de la période de contrat .
+                </p>
+                <div class="read-more">
+                  <a href="#" class="btn btn-success">Lire plus</a>
                 </div>
               </div>
-              <div class="team-content text-center">
-               
-                <p>METHODE DETERMINISTE DE CHAIN LADDER ET CHAIN LADDER PONDERE</p>
+            </article><!-- End blog entry -->
+          </div><!-- End blog entries list -->
+        </div>
+      </div>
+    </section><!-- End Counts Section -->
+    
+
+    <!-- ======= Tabs Section ======= -->
+    <section id="tabs" class="tabs">
+      <div class="container" data-aos="fade-up">
+        <h3 class="text-center">
+          Sujet de recherches 
+        </h3> <br> <br>
+
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-4">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="ri-gps-line"></i>
+              <h6 class="d-none d-lg-block">SIMULATION MONTE-CARLO D'EQUATION DIFFERENTIELLES STOCHASTIQUES AVEC DES GANS​.</h6>
+            </a>
+          </li>
+          
+          
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>Exploration des Technologies de Pointe</h3>
+                <p class="fst-italic">
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Découvrez les innovations qui façonnent l'avenir.</li>
+                  <li><i class="ri-check-double-line"></i> Rencontrez les experts de l'industrie et explorez de nouvelles perspectives.</li>
+                  <li><i class="ri-check-double-line"></i> Participez à des ateliers interactifs sur les dernières technologies.</li>
+                </ul>
+                <p>
+                  Explorez les possibilités infinies des technologies émergentes. Rencontrez des pionniers de l'industrie, participez à des débats stimulants et découvrez comment les innovations technologiques redéfinissent notre avenir.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/tabs-1.jpg" alt="Exploration des Technologies" class="img-fluid">
               </div>
             </div>
           </div>
-          <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-                  <img src="poste3.webp" alt="">
-                </a>
-                <div class="team-social-icon text-center">
-                  
+          
+          
+          
+          
+        </div>
+
+      </div>
+    </section><!-- End Tabs Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg ">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Decouvrez nos frormations de pointe.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="#">Formation em langage R</a></h4>
+              <p>Projet ++ offre des formations gratuites chaque mois au langage R .</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="#">FORMATION AU RSHINY</a></h4>
+              <p>Projet ++ offre des formations gratuites en Rshiny .</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="#">Aide dans vos projets</a></h4>
+              <p>Projet ++ vous aide dans la realisation de vos projets (algorithmiques,Simulation stochastiques,application Rshiny etc.)sous R ou python .</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="#">PROMOUVOIR</a></h4>
+              <p>Projet ++ promuent vos sujets de recherches(memoires ,articles ,projets ) liés à l'actuariat , la data science et ou la finance quantitative .</p>
+            </div>
+          </div>
+          
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Webinaires</h2>
+          <p>Résumé de nos Webinaires..</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/1.webp" class="testimonial-img" alt="">
+                  <h3>Brice Dro</h3>
+                  <p>
+                    La résolution d'EDP-Semi linéaire par Deep Learning
+                    
+                    </p>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Résoudre des équations aux dérivées partielles (EDP) semi-linéaires grâce au Deep Learning : une approche novatrice utilisant des méthodes d'apprentissage profond, notamment les réseaux de neurones, pour résoudre efficacement des problèmes mathématiques complexes impliquant des équations différentielles combinant des termes linéaires et non linéaires. Une solution moderne et performante pour la résolution numérique de ces EDP.                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <a href="" class="btn btn-primary">En avoir plus </a>
                 </div>
               </div>
-              <div class="team-content text-center">
-               
-                <p>ALGORITHME DE HDBSCAN</p>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/2.webp" class="testimonial-img" alt="">
+                  <h3>Alphonse Ebrotié</h3>
+                  <p>
+                    Apprentissage et modélisation de processus stochastiques par le biais des réseaux de neurones.</p>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    L'objectif est le calibrage de réseaux de neurones capables de modéliser des données provenant de processus définis par des équations différentielles stochastiques (EDS).                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <a href="" class="btn btn-primary">En avoir plus </a>
+
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/3.webp" class="testimonial-img" alt="">
+                  <h3>Aimé Ndjeng
+
+                  </h3>
+                  <p>
+                    Algorithme DBSCAN et HDBSCAN</p>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Présentation d'un algorithme de partitionnement de données utilisé en data science: L'algorithme de Dbscan et Hdbscan.
+
+                    Il propose une approche différente de l'algorithme des K-means.                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <a href="" class="btn btn-primary">En avoir plus </a>
+
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/4.webp" class="testimonial-img" alt="">
+                  <h3>Brou Erwan
+
+                  </h3>
+                  <p>Étude de la présence et des origines des discriminations en assurance IARD.
+
+                  </p>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Le webinaire aborde la problématique cruciale de la discrimination en assurance IARD (Incendie, Accidents et Risques Divers). L'étude se concentre sur l'identification et l'analyse des origines de ces discriminations, visant à sensibiliser et à comprendre les mécanismes sous-jacents. L'objectif est de développer des perspectives et des solutions pour promouvoir une approche plus équitable dans le secteur de l'assurance IARD.                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <a href="" class="btn btn-primary">En avoir plus </a>
+
+                </div>
+              </div>
+            </div><!-- End testimonial item -->->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/5.webp" class="testimonial-img" alt="">
+                  <h3>Othniel Kplé
+
+                  </h3>
+                  <p>Modélisation des dommages consécutifs aux feux de forêt.
+
+
+
+                  </p>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Modélisation des dommages causés par les incendies de forêt : une exploration des méthodes de modélisation pour comprendre et prédire les conséquences des feux de forêt. Cette étude vise à améliorer la gestion des risques liés aux incendies, en fournissant des outils et des perspectives pour mieux anticiper, évaluer et atténuer les dommages associés à ces événements naturels.
+
+                  </p>
+                  <a href="" class="btn btn-primary">En avoir plus </a>
+
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Evénements/Actualités</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+        <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+          <!-- Ajout de l'image -->
+          <img src="assets/img/blog/event2.webp" alt="Image 2" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+        <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+          <!-- Ajout de l'image -->
+          <img src="assets/img/blog/event1.webp" alt="Image 1" class="img-fluid">
+          <div class="btn-wrap">
+            <a href="#" class="btn btn-buy">Participez</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+<!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Notre ekip</h2>
+        </div>
+
+        <div class="row">
+
+          
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/testimonials/2.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/alphonse-ebrotie-0201bb1b8/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Alphonse Ebrotie</h4>
+                <span>Responsable équipe LABS
+
+                </span>
               </div>
             </div>
           </div>
-          <!-- End column -->
 
-          <!-- End column -->
-        </div>
-      </div>
-    </div><!-- End Team Section -->  
-    <div class="container">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/testimonials/3.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/aim%C3%A9-nlend-2496bb24b/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Aimé Ndjeng
 
-      <div class="rows">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline services-head text-center">
-            <h4>Le calcul des probabilités, appliqué à la mortalité humaine a donné naissance à une science nouvelle : <span>celle des assurances. </span></H4>
+                </h4>
+                <span>Responsable Projet++
+
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
 
-      </div>
-    </div> <br> <br>
+          
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/testimonials/4.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/brou-erwan-koua-03aaa91a6/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Erwan Brou Kouassi
 
+                </h4>
+                <span>Vice - responsable équipe LABS
 
-    <div class="reviews-area">
-      <div class="row g-0">
-        <div class="col-lg-6">
-          <img src="service.jpeg" alt="" class="img-fluid" style="width: 100%;">
-        </div>
-        <div class="col-lg-6 work-right-text d-flex align-items-center">
-          <div class="px-5 py-5 py-lg-0">
-            <h2>Nos services</h2>
-            <h5>Contactez-nous pour bénéficier de nos services.</h5>
-            <a href="formation.html" class="ready-btn scrollto">Decouvrir</a>
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div><!-- End Rviews Section -->
+          
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/testimonials/6.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/yapi-kouassi-1521681b6/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Yapi Kouassi
 
-  
+                </h4>
+                <span>Membre équipe Labs
+
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/testimonials/7.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/michelle-ngnibo-8bb69a21b/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dro Sigui
+
+                </h4>
+                <span>Membre de l'équipe Blogs
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/testimonials/8.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/princesse-g-h-gnamba-9643b9248/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Princesse Gamba
+
+                </h4>
+                <span>Membre de l'équipe marketing</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/testimonials/9.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/saber-abdulrahman-406402268/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Saber ABDULRAHMAN
+
+                </h4>
+                <span>Responsable Marketing
+
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/testimonials/10.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/mamadou-sow-7b0b31209/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mamadou sow
+
+                </h4>
+                <span>Membre de l'équipe Blog
+
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/testimonials/11.webp" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.linkedin.com/in/cedric-axel-aboua-952530101/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Cedric Aboua
+
+
+
+                </h4>
+                <span>Membre de l'équipe Labs
+
+
+
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+    
+
     <!-- ======= Contact Section ======= -->
-    <div id="contact" class="contact-area">
-      <div class="contact-inner area-padding">
-        <div class="contact-overly"></div>
-        <div class="container ">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="section-headline text-center">
-                <h2>Contactez-nous</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <!-- Start contact icon column -->
-            <div class="col-md-4">
-              <div class="contact-icon text-center">
-                <div class="single-icon">
-                  <i class="bi bi-phone"></i>
-                  <p>
-                    Call: (+33) 753645573<br>
-                    <span>Lundi-Vendredi 08H - 17h</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Start contact icon column -->
-            <div class="col-md-4">
-              <div class="contact-icon text-center">
-                <div class="single-icon">
-                  <i class="bi bi-envelope"></i>
-                  <p>
-                    Email: blackpearlplus145@gmail.com<br>
-                   
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Start contact icon column -->
-            <div class="col-md-4">
-              <div class="contact-icon text-center">
-                <div class="single-icon">
-                  <i class="bi bi-geo-alt"></i>
-                  <p>
-                    Location: France<br>
-                    <span>Paris
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-
-            <!-- Start Google Map -->
-            <div class="col-md-6">
-              <!-- Start Map -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167997.47302496093!2d2.18222528732646!3d48.8589633033451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sci!4v1701391675916!5m2!1sfr!2sci"  width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-              <!-- End Map -->
-            </div>
-            <!-- End Google Map -->
-
-            <!-- Start  contact -->
-            <div class="col-md-6">
-                <div class="form contact-form">
-                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Nom" required>
-                    </div>
-                    <div class="form-group mt-3">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                    </div>
-                    <!-- Utilisez une liste déroulante pour les intérêts -->
-                    <div class="form-group mt-3">
-                      <label for="interests">Intérêts :</label>
-                      <select class="form-control" name="interests" id="interests" required>
-                        <option value="" disabled selected>Sélectionnez vos intérêts</option>
-                        <option value="actuariat">Actuariat</option>
-                        <option value="data-science">Data Science</option>
-                        <option value="finance-quantitative">Finance Quantitative</option>
-                      </select>
-                    </div>
-                    <div class="form-group mt-3">
-                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Envoyez</button></div>
-                  </form>
-                </div>
-              </div>
-              
-            <!-- End Left contact -->
-          </div>
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+    
+        <div class="section-title">
+          <h2>Contact</h2>
         </div>
+    
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="col-lg-6">
+    
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Notre Adresse</h3>
+                  <p> France
+                    Paris</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Contactez-nous par Email</h3>
+                  <p>Blackpearlplus@gmail.com </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Appelez-nous</h3>
+                  <p>+33 753645573 </p>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Adresse Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Chargement</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Votre message a été envoyé. Merci !</div>
+              </div>
+              <div class="text-center"><button type="submit">Envoyer le Message</button></div>
+            </form>
+          </div>
+    
+        </div>
+    
       </div>
-    </div><!-- End Contact Section -->
+    </section><!-- Fin de la Section Contact -->
+    
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer>
-    <div class="footer-area">
+  <footer id="footer">
+
+    <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="footer-content">
-              <div class="footer-head">
-                <div class="footer-logo">
-                  <img src="pp.webp" alt="">
-                </div>
-                <p>
-                    Mettons en lumière les talents en actuariat, Data-science et en finance quantitative.                </p>
-                <div class="footer-icons">
-                  <ul>
-                    
-                    <li>
-                      <a href="https://ci.linkedin.com/company/blackpearlplus"><i class="bi bi-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Projet<span>++</span></h3>
+            <p>
+              France
+Paris <br>
+
+              
+              <strong>Phone:</strong> +33 753645573<br>
+              <strong>Email:</strong> Blackpearlplus@gmail.com<br>
+            </p>
           </div>
-          <!-- end single footer -->
-          <div class="col-md-4">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>information</h4>
-                
-                <div class="footer-contacts">
-                  <p><span>Tel:</span> (+33) 753645573</p>
-                  <p><span>Email:</span> blackpearlplus145@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Poste à l'affiche</h4>
-                <div class="flicker-img">
-                  <a href="#"><img src="poste1.webp" alt=""></a>
-                  <a href="#"><img src="poste2.webp" alt=""></a>
-                  <a href="#"><img src="poste3.webp" alt=""></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; <strong>Projet ++</strong>. All Rights Reserved
-              </p>
-            </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
             
           </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Abonne toi a Newsletter</h4>
+           
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="S'inscrire ">
+            </form>
+          </div>
+
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
 
-  <div id="preloader"></div>
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Projet++</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com/company/blackpearlplus/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
